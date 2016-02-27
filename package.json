@@ -1,0 +1,39 @@
+{
+  "name": "Flux-ES6",
+  "version": "0.1.0",
+  "description": "Flux/ES6 project following Egghead tutorial",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoonio/flux.git"
+  },
+  "keywords": [
+    "flux",
+    "es6",
+    "react"
+  ],
+  "author": "Hoonio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hoonio/flux/issues"
+  },
+  "homepage": "https://github.com/hoonio/flux#readme",
+  "dependencies": {
+     "flux": "^2.1.1",
+     "history": "^1.13.0",
+     "react": "^0.14.2",
+     "react-dom": "^0.14.2",
+     "react-router": "^1.0.0-rc4"
+   },
+   "devDependencies": {
+     "babel-core": "^6.1.2",
+     "babel-loader": "^6.0.1",
+     "babel-preset-es2015": "^6.1.2",
+     "babel-preset-react": "^6.1.2",
+     "webpack": "^1.12.3"
+   }
+}
