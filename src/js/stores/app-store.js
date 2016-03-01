@@ -16,7 +16,7 @@ for ( let i=1; i<9; i++ ){
   });
 }
 
-var cartImtes = [];
+var _cartItems = [];
 
 const _removeItem = (item) => {
   _cartItems.splice( _cartItems.findIndex( i => i===item ), 1 );
@@ -59,7 +59,7 @@ const AppStore = Object.assign(EventEmitter.prototype, {
   },
   addChangeListener(callback){
     this.on(CHANGE_EVENT, callback)
-  }
+  },
   removeChangeListener(callback){
     this.removeListener(CHANGE_EVENT,callback)
   },
@@ -68,7 +68,7 @@ const AppStore = Object.assign(EventEmitter.prototype, {
   },
   getCatalog(){
     return _catalog.map(item => {
-      return Object.assign( {}, item, _cartItems.find(cItem=>cItem.id===item.id))
+      return Object.assign( {}, item, _cartItems.find( cItem => cItem.id === item.id))
     })
   },
   getCartTotals(){
