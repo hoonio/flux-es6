@@ -79,7 +79,7 @@ const AppStore = Object.assign(EventEmitter.prototype, {
       case AppConstants.ADD_ITEM:
         _addItem(action.item);
         break;
-      case AppConstant.REMOVE_ITEM:
+      case AppConstants.REMOVE_ITEM:
         _removeItem(action.item);
         break;
       case AppConstants.INCREASE_ITEM:
